@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Calculator</title>
+    <meta name="description" content="Simple Calculator." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="assets/calculator.ico" />
+    <link rel="stylesheet" href="style.css" id="theme" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="result-bar" id="result">0</div>
+      <div class="button-grid">
+        <button class="highlight" onclick="clearResult()">AC</button>
+        <button onclick="backspace()">&#x232b;</button>
+        <button onclick="liveScreen('+/-')">+/-</button>
+        <button onclick="liveScreen('/')">&#247;</button>
+
+        <button onclick="liveScreen(7)">7</button>
+        <button onclick="liveScreen(8)">8</button>
+        <button onclick="liveScreen(9)">9</button>
+        <button onclick="liveScreen('*')">&#215;</button>
+
+        <button onclick="liveScreen(4)">4</button>
+        <button onclick="liveScreen(5)">5</button>
+        <button onclick="liveScreen(6)">6</button>
+        <button onclick="liveScreen('-')">&#8722;</button>
+
+        <button onclick="liveScreen(1)">1</button>
+        <button onclick="liveScreen(2)">2</button>
+        <button onclick="liveScreen(3)">3</button>
+        <button onclick="liveScreen('+')">&#43;</button>
+
+        <button onclick="liveScreen('%')">&#37;</button>
+        <button onclick="liveScreen(0)">0</button>
+        <button onclick="liveScreen('.')">&#46;</button>
+        <button class="highlight" onclick="calculate()">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
